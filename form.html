@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Beginner-friendly chess strategy tips to help new players improve their skills with simple and practical advice.">
+    <meta name="keywords"
+        content="chess, beginner chess, chess strategy, chess tips, chess openings, checkmate, chess guide">
+    <meta name="author" content="Kyle Greyshock">
+    <link rel="stylesheet" type="text/css" href="GreyshockKyleStyleSheet.css">
+    <title>Beginner Chess Strategy Guide</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="GreyshockKyleHomePage.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="form.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <h1>Contact Us</h1>
+
+    <form method="post" action="https://httpbin.org/post">
+        <p>
+            Your Name: <input type="text" name="username">
+        </p>
+
+        <p>
+            Select your playing strength:<br>
+            <input type="radio" name="level" value="beginner"> Beginner<br>
+            <input type="radio" name="level" value="intermediate"> Intermediate<br>
+            <input type="radio" name="level" value="advanced"> Advanced
+        </p>
+
+        <p>
+            Which parts of chess do you enjoy? (Check all that apply)<br>
+            <input type="checkbox" name="enjoy" value="openings"> Openings<br>
+            <input type="checkbox" name="enjoy" value="tactics"> Tactics<br>
+            <input type="checkbox" name="enjoy" value="endgames"> Endgames
+        </p>
+
+        <p>
+            Which openings do you play? (Hold Ctrl/Cmd to select multiple)<br>
+            <select name="openings" multiple size="4">
+                <option value="sicilian">Sicilian Defense</option>
+                <option value="caro-kann">Caro-Kann</option>
+                <option value="french">French Defense</option>
+                <option value="london">London System</option>
+            </select>
+        </p>
+
+        <p>
+            Any comments or suggestions?<br>
+            <textarea name="comments" rows="4" cols="40"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+
+</body>
+
+</html>
