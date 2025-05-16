@@ -21,7 +21,11 @@
             <li><a href="form.html">Contact</a></li>
         </ul>
     </nav>
-    <h1>Mastering the Chess Basics: A Beginner's Chess Strategy Guide</h1>
+    <button onclick="showDateTime()">Show Current Date and Time</button>
+    <p id="datetime-output"></p>
+    <h1 id="main-heading" onmouseover="changeColor()" onmouseout="resetColor()">
+        Mastering the Chess Basics: A Beginner's Chess Strategy Guide
+    </h1>
     <hr>
     <h2>Welcome Video</h2>
     <video controls width="600">
@@ -40,8 +44,8 @@
         Your browser does not support the audio element.
     </audio>
     <p class="a11y-desc">
-        <strong>Audio description:</strong> A brief audio welcome message encouraging visitors to explore beginner chess
-        tips and improve their play by following the principles mentioned on the site.
+        <strong>Audio description:</strong> An audio welcome message encouraging visitors to explore beginner chess
+        tips and improve their play by following the principles mentioned on this site.
     </p>
 
     <h2>Why Chess Strategy Matters</h2>
@@ -138,6 +142,34 @@
         and <span class="italictext">practice daily</span>.
         Most importantly, <span class="boldtext italictext">have fun playing!</span>
     </p>
+    <div id="secret-box" onmouseover="showSecretMessage()" onmouseout="showDefaultMessage()"
+        style="width: 200px; height: 100px; background-color: #f1f1f1; padding: 10px; text-align: center; line-height: 80px; font-weight: bold;">
+        Mouse Over Me
+    </div>
+    <script>
+        function showDateTime() {
+            const now = new Date();
+            document.getElementById("datetime-output").innerHTML = now.toString();
+        }
+    </script>
+    <script>
+        function changeColor() {
+            document.getElementById("main-heading").style.color = "#e63946"; // red
+        }
+
+        function resetColor() {
+            document.getElementById("main-heading").style.color = "#004080"; // navy blue (original)
+        }
+    </script>
+    <script>
+        function showSecretMessage() {
+            document.getElementById("secret-box").innerText = "🎉 Surprise! You’re a future chess grandmaster!";
+        }
+
+        function showDefaultMessage() {
+            document.getElementById("secret-box").innerText = "Mouse Over Me";
+        }
+    </script>
 
 </body>
 
